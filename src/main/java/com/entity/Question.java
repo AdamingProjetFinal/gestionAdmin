@@ -12,7 +12,10 @@ import javax.persistence.ManyToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+/**
+ * @author Flavien
+ *
+ */
 @Entity
 @Data
 @NoArgsConstructor

@@ -6,7 +6,10 @@ import javax.persistence.Embeddable;
 import javax.persistence.ManyToOne;
 
 import lombok.Data;
-
+/**
+ * @author Flavien
+ *
+ */
 @SuppressWarnings("serial")
 @Data
 @Embeddable
