@@ -25,6 +25,9 @@ public class Question {
 	private Long id;
 	
 	@ManyToMany
-	private List<Questionnaire> questionnaire;
+	private List<Questionnaire> questionnaires;
+	
+	@Column(name = "QUESTION_INTITULE")
+	private String intituleQuestion;
 
 }
