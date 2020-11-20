@@ -3,12 +3,14 @@ package com.services.impl;
 import org.springframework.stereotype.Service;
 
 import com.entity.ReponseQuestionnaire;
-import com.services.DaoService;
+import com.services.ReponseQuestionnaireService;
+import com.services.impl.DaoServiceImpl;
+
 /**
  * @author Flavien
  *
  */
 @Service
-public interface ReponseQuestionnaireServiceImpl extends DaoService<ReponseQuestionnaire> implements ReponseQuestionnaireService {
+public class ReponseQuestionnaireServiceImpl extends DaoServiceImpl<ReponseQuestionnaire> implements ReponseQuestionnaireService{
 
 }
