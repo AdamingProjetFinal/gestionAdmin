@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,6 +30,9 @@ public class Question {
 	
 	@ManyToMany
 	private List<Questionnaire> questionnaires;
+	
+	@OneToMany
+	private List<ReponseQuestion> reponses;
 	
 	@Column(name = "QUESTION_INTITULE")
 	private String intituleQuestion;
