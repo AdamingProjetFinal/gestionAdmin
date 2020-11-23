@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
  * @author Flavien
  *
  */
-@Entity
+//@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
