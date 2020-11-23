@@ -7,6 +7,6 @@ import com.entity.Questionnaire;
  *
  */
 //@Repository
-public interface QuestionnaireRepository extends DaoRepository<Questionnaire> {
+public interface QuestionnaireRepository /* extends DaoRepository<Questionnaire> */ {
 
 }

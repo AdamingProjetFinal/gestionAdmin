@@ -18,22 +18,22 @@ import lombok.NoArgsConstructor;
  */
 //@Entity
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+//@AllArgsConstructor
 public class Question {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "QUESTION_ID")
-	private Long id;
-	
-	@ManyToMany
-	private List<Questionnaire> questionnaires;
-	
-	@OneToMany
-	private List<ReponseQuestion> reponses;
-	
-	@Column(name = "QUESTION_INTITULE")
-	private String intituleQuestion;
+//	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@Column(name = "QUESTION_ID")
+//	private Long id;
+//	
+//	@ManyToMany
+//	private List<Questionnaire> questionnaires;
+//	
+//	@OneToMany
+//	private List<ReponseQuestion> reponses;
+//	
+//	@Column(name = "QUESTION_INTITULE")
+//	private String intituleQuestion;
 
 }
