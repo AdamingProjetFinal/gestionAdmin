@@ -2,7 +2,6 @@ package com.entity;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
