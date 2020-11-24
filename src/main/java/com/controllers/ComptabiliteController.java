@@ -6,8 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author Flavien
  *
  */
+import org.springframework.web.bind.annotation.RestController;
+
+import com.entity.Comptabilite;
 @RequestMapping("/Comptabilite")
 @CrossOrigin(origins = "*")
-public class ComptabiliteController {
+@RestController
+public class ComptabiliteController extends ControllerImpl<Comptabilite>{
 
 }
