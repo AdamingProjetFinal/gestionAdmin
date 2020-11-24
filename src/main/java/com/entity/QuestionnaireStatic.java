@@ -24,27 +24,24 @@ public class QuestionnaireStatic {
 	@Column(name = "QUESTIONNAIRESTAT_ID")
 	private Long id;
 	
-	@Column(name = "QUESTIONNAIRESTAT_IDCONSULT")
-	private Long idConsultation;
-	
 	@Column(name = "QUESTIONNAIRESTAT_QUES1")
 	private String question1;
-	@Column(name = "QUESTIONNAIRESTAT_REP1")
-	private int reponse1;
+	@Column(name = "QUESTIONNAIRESTAT_TAG1")
+	private String tagQuestion1;
 	
 	@Column(name = "QUESTIONNAIRESTAT_QUES2")
 	private String question2;
-	@Column(name = "QUESTIONNAIRESTAT_REP2")
-	private int reponse2;
+	@Column(name = "QUESTIONNAIRESTAT_TAG2")
+	private String tagQuestion2;
 	
 	@Column(name = "QUESTIONNAIRESTAT_QUES3")
 	private String question3;
-	@Column(name = "QUESTIONNAIRESTAT_REP3")
-	private int reponse3;
+	@Column(name = "QUESTIONNAIRESTAT_TAG3")
+	private String tagQuestion3;
 	
 	@Column(name = "QUESTIONNAIRESTAT_QUES4")
 	private String question4;
-	@Column(name = "QUESTIONNAIRESTAT_REP4")
-	private int reponse4;
+	@Column(name = "QUESTIONNAIRESTAT_TAG4")
+	private String tagQuestion4;
 
 }
