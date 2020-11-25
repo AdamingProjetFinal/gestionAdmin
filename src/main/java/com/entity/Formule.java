@@ -33,8 +33,5 @@ public class Formule {
 	@Column(name = "FORMULE_TAXE")
 	private Double taxe;
 	
-	@Column(name = "FORMULE_SPEMED")
-	private Long idSpecialiteMedecin;
-	
 
 }

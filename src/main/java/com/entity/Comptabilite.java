@@ -1,5 +1,7 @@
 package com.entity;
 
+import java.time.ZonedDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,10 +32,10 @@ public class Comptabilite {
 	@Column(name = "COMPTABILITE_FRAIS")
 	private Double frais;
 	
-	@Column(name = "COMPTABILITE_TTC")
-	private Double ttc;
+	@Column(name = "COMPTABILITE_GAIN")
+	private Double gain;
 	
-	@Column(name = "COMPTABILITE_PRIXCONSULTATION")
-	private Double prixConsultation;
+	@Column(name = "FORMULE_DATE")
+	private ZonedDateTime date;
 
 }
