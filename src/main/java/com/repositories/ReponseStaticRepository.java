@@ -10,5 +10,12 @@ import com.entity.ReponseStatic;
  */
 @Repository
 public interface ReponseStaticRepository extends DaoRepository<ReponseStatic> {
+	
+	/**
+	 * @author Florian
+	 * @param id	
+	 *
+	 */
+	public ReponseStatic findByIdConsultation(Long id);
 
 }
