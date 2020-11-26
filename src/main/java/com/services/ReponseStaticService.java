@@ -3,6 +3,7 @@ package com.services;
 
 
 import java.io.IOException;
+import java.util.List;
 
 import com.entity.ReponseStatic;
 
@@ -16,4 +17,10 @@ public interface ReponseStaticService extends DaoService<ReponseStatic> {
 	 *
 	 */
 	public ReponseStatic findReponseByIdConsultation(Long id) ;
+	
+	/**
+	 * @author Florian
+	 *
+	 */
+	public List<ReponseStatic> findReponsesByIdQuestionnaire(Long id) ;
 }

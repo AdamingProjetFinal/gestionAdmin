@@ -7,5 +7,6 @@ import com.entity.QuestionnaireStatic;
  *
  */
 public interface QuestionnaireStaticService extends DaoService<QuestionnaireStatic> {
-
+	
+	public QuestionnaireStatic findLastQuestionnaire();
 }

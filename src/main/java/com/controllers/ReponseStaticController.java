@@ -2,6 +2,7 @@ package com.controllers;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
@@ -44,5 +45,16 @@ public class ReponseStaticController extends ControllerImpl<ReponseStatic> {
 				response.put("data", r);
 			}
 		return response;
+	}
+	
+	/**
+	 * 
+	 * Methode findByQuestionnaireID exposee 
+	 * @return List<ReponseStatic> 
+	 * 
+	 */
+	@GetMapping("/idQuestionnaire/{id}")
+	public List<ReponseStatic> findByQuestionnaireID(@PathVariable("id") Long id) {
+		return service.findReponsesByIdQuestionnaire(id);
 	}
 }
