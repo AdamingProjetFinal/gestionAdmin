@@ -42,15 +42,13 @@ public class GestionAdminApplication {
 		ReponseStatic r3 = new ReponseStatic(null, 3L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
 		ReponseStatic r4 = new ReponseStatic(null, 4L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
 		ReponseStatic r5 = new ReponseStatic(null, 5L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
-		ReponseStatic r6 = new ReponseStatic(null, 6L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
-		ReponseStatic r7 = new ReponseStatic(null, 7L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
 		ReponseStatic r8 = new ReponseStatic(null, 8L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
 		ReponseStatic r9 = new ReponseStatic(null, 9L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
 		ReponseStatic r10 = new ReponseStatic(null, 10L, q , new Random().nextInt(6), new Random().nextInt(6),new Random().nextInt(6),new Random().nextInt(6));
 
 		return (args)->{
 			Stream.of(q).forEach( item ->questionService.saveOrUpdate( item ) );
-			Stream.of(r1,r2,r3,r4,r5,r6,r7,r8,r9,r10).forEach( item ->reponseService.saveOrUpdate( item ) );
+			Stream.of(r1,r2,r3,r4,r5,r8,r9,r10).forEach( item ->reponseService.saveOrUpdate( item ) );
 			formuleService.saveOrUpdate(new Formule(null,ZonedDateTime.now(),20D));
 			adminService.saveOrUpdate(new Admin(null, "admin", "admin"));
 		};
